@@ -1,0 +1,15 @@
+{
+  "name": "Liloca Games - Patinadora",
+  "short_name": "Liloca Games",
+  "description": "Jogo da patinadora com 10 fases",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffe9f3",
+  "theme_color": "#ff7eb6",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

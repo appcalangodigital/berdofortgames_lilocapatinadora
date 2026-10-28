@@ -46,7 +46,7 @@ html,body{margin:0;height:100%;background:var(--bg);font-family:"Trebuchet MS","
 .chs{display:flex;gap:10px;justify-content:center}
 .chb{border-radius:18px;border:4px solid var(--ink);background:#fff;padding:4px 8px;cursor:pointer;display:flex;flex-direction:column;align-items:center;font-weight:800;font-size:clamp(13px,3.6vh,17px);color:var(--ink);font-family:inherit}
 .chb.on{background:var(--sun)}
-.chb canvas{width:clamp(54px,17vh,84px);height:auto;display:block}
+.chb canvas{width:clamp(64px,22vh,100px);height:auto;display:block}
 #fin{position:absolute;right:8px;bottom:6px;display:flex;gap:8px}
 #fin[hidden]{display:none}
 #fin button{width:46px;height:46px;border-radius:50%;border:4px solid var(--ink);background:var(--mint);font-size:22px;cursor:pointer;padding:0}
@@ -162,7 +162,7 @@ function showPick(){
  var c=$('chs');c.innerHTML='';
  CHS.forEach(function(ch,i){var b=document.createElement('button');b.className='chb'+(i===(save.ch||0)?' on':'');
   var cn=document.createElement('canvas');cn.width=90;cn.height=104;b.appendChild(cn);
-  var sp=document.createElement('span');sp.textContent=ch.n;b.appendChild(sp);
+  b.setAttribute('aria-label',ch.n);
   b.onclick=function(){save.ch=i;persist();applyCh();beep(660,.1,'triangle',.15);buildMap()};c.appendChild(b);
   var cx=cn.getContext('2d'),g0=g;g=cx;cx.scale(1.5,1.5);sk(30,64,1,ch.hair,ch.dress,0,0,0,0,ch);g=g0});
  $('pick').hidden=false;say('Escolha a sua patinadora!');

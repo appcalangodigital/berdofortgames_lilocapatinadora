@@ -1,11 +1,11 @@
 {
   "name": "Liloca Games - Patinadora",
   "short_name": "Liloca Games",
-  "description": "Jogo da patinadora com 10 fases",
+  "description": "Jogo da patinadora com 10 fases e final no pódio",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "landscape",
   "background_color": "#ffe9f3",
   "theme_color": "#ff7eb6",
   "icons": [
